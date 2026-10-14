@@ -23,7 +23,7 @@ python watchdog.py --demo
    (e.g. `DEMO-2: add staging config`), and leave others quiet on purpose.
 4. Make a Jira API token (id.atlassian.com > Security > API tokens).
 5. Add repo secrets (Settings > Secrets and variables > Actions):
-   `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`, `JIRA_PROJECT`.
+   `JIRA_BASE_URL`, `JIRA_EMAIL`, `JIRA_API_TOKEN`. The project key is set in the workflow file.
    (`GITHUB_TOKEN` is provided automatically.)
 6. Actions tab > Delivery watchdog > Run workflow.
 

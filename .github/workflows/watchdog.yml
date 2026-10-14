@@ -26,7 +26,7 @@ jobs:
           JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
-          JIRA_PROJECT: ${{ secrets.JIRA_PROJECT }}
+          JIRA_PROJECT: DEMO   # not sensitive, so not a secret (secrets get masked as *** in logs)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
         run: python watchdog.py --days 3
