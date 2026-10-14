@@ -29,6 +29,7 @@ jobs:
           JIRA_PROJECT: DEMO   # not sensitive, so not a secret (secrets get masked as *** in logs)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPO: ${{ github.repository }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # optional: enables AI triage
         run: python watchdog.py --days 3
 
       - uses: actions/upload-artifact@v4
